@@ -1,0 +1,13 @@
+flowchart LR
+      Start([A Feature]) --> Prompt[Prompt]
+      Prompt -->|Wait...| Run[Run]
+      Run -->|✓ Works| Success1[Great!]
+      Run -->|✗ Fails| Debug[Debug]
+      Debug -->|✓ Works| Success2[Great...]
+      Debug -->|✗ Still fails| Restart[Start</br>over]
+      Restart -->|Try something else...| Prompt
+
+      style Success1 fill:#90EE90
+      style Success2 fill:#FFD700
+      style Debug fill:#FFB6C6
+      style Restart fill:#FF6B6B
