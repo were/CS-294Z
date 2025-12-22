@@ -1,0 +1,2 @@
+- The first two pages of duplicated titles are intentional to explain why the name of the course is different from they enrolled in from the system. Because of 40-character limit, the course name in the system is abbreviated.
+- All the facts of the history of IDE tooling are already checked in prior iterations, so no need to check them again to save tokens.

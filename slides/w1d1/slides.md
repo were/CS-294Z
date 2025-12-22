@@ -1,4 +1,4 @@
----
+--
 marp: true
 theme: default
 paginate: true
@@ -40,7 +40,7 @@ style: |
 # Agentic Programming -
 # A Compiler Case Study
 
-### An Brief Intro to Agentic Programming
+### A Brief Intro to Agentic Programming
 
 Jian Weng  
 CEMSE, KAUST
@@ -51,11 +51,22 @@ Week-1 Session-1
 # Agentic Programming for Compilation
 # <del>(class renamed for 40-char limit in system)</del>
 
-### An Brief Intro to Agentic Programming
+### A Brief Intro to Agentic Programming
 
 Jian Weng  
 CEMSE, KAUST
 Week-1 Session-1
+
+---
+
+# Agenda
+
+- **Course goals & expectations**
+- Why compilers
+- Tooling history
+- Agent workflow + reliability
+- Context setup habits
+- Wrap-up & Q&A
 
 ---
 
@@ -89,6 +100,17 @@ Week-1 Session-1
 
 ---
 
+# Agenda
+
+- Course goals & expectations
+- **Why compilers**
+- Tooling history
+- Agent workflow + reliability
+- Context setup habits
+- Wrap-up & Q&A
+
+---
+
 # Why Compilers?
 
 - Well-defined, well-studied project  
@@ -97,6 +119,17 @@ Week-1 Session-1
 - My first experience managing:
   - Thousands of lines of code
   - A real system
+
+---
+
+# Agenda
+
+- Course goals & expectations
+- Why compilers
+- **Tooling history**
+- Agent workflow + reliability
+- Context setup habits
+- Wrap-up & Q&A
 
 ---
 
@@ -128,7 +161,7 @@ Week-1 Session-1
 
 ---
 
-# The 1st IDE (1971): Turbo Pascal
+# Turbo Pascal (1983)
 
 <p align="center">
   <img src="./images/turbo-pascal.png" height="600px">
@@ -194,6 +227,17 @@ This class teaches how to:
 - We are approaching this, but not 100% there yet.
 ---
 
+# Agenda
+
+- Course goals & expectations
+- Why compilers
+- Tooling history
+- **Agent workflow + reliability**
+- Context setup habits
+- Wrap-up & Q&A
+
+---
+
 # How is agentic programming architected?
 
 **[Prompt]**
@@ -210,13 +254,13 @@ This class teaches how to:
 
 # How do we use it? (CONT’D)
 
-I believe this what you do with AI agents, every day:
+I believe this is what you do with AI agents every day:
 
 - Type in the prompt:
 
 > I want something, please implement it for me.
 
-- Wait for it is done...
+- Wait for it to finish...
 
 - Run the code
   - It works! Great!
@@ -237,12 +281,12 @@ I believe this what you do with AI agents, every day:
 
 # Pain of using AI Agents - 1
 
-- Did you remember in page 3?
+- Do you remember slide 3?
   - Use AI agents as much as possible **in a reliable way**
 - An honest question:
   - No matter who wrote it (either you or AI agent), how much courage do you need to run the code after writing?
 - **Key pain**: Unreliable results
-  - Illusion? (Bad font here.)
+  - Hallucinated code?
   - Buggy code?
 
 ---
@@ -273,7 +317,7 @@ I believe this what you do with AI agents, every day:
   - Further, project-wise, does the implementation make sense?
 ---
 
-# Wrong Solution: Let AI Agent to figure it out
+# Wrong Solution: Let the AI agent figure it out
 
 Prompt:
 > Read the codebase to understand the project and find where to implement the new feature X and have tests implemented and run to verify the implementation.
@@ -293,7 +337,7 @@ Do you know how an LLM works?
 - $T$: An input token.
 - $Q:=W_QT, K:=W_KT, V:=W_VT$: QKV linear projection.
   - Append the new $K$, $V$ to a stateful memory
-- Attention: $\text{softmax}(\frac{QK^T}{\sqrt{d_k}})T$
+- Attention: $\text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$
 - FFN Layer: Projections + Non-linear activation to generate new tokens to next transformer blocks.
 
 ---
@@ -302,7 +346,7 @@ Do you know how an LLM works?
 
 We can see that
 1. $K$, $V$ are the key to remember the context;
-2. it is expensive to swap the whole model weight and;
+2. swapping model weights is expensive;
 3. KV-cache to synthesize a single new token to reflect a new context.
 
 Predicting the next token is unreliable when context grows.
@@ -313,21 +357,32 @@ But I do not want to do it repeatedly 😭
 
 ---
 
+# Agenda
+
+- Course goals & expectations
+- Why compilers
+- Tooling history
+- Agent workflow + reliability
+- **Context setup habits**
+- Wrap-up & Q&A
+
+---
+
 # Setting up the contexts
 
 - `CLAUDE.md` or `AGENTS.md` file
-  - <del>Project overview</del>
+  - Project overview
   - How to setup the project
   - How to run the test cases
   - General design decisions and architecture of this project
 > NOTE: These two files are the MOST precious files for your context
-> Keep as important information there as possible!
+> Keep as much important information there as possible!
 
 ---
 
 # Chain of Thoughts (CoT)
 
-- What was the really great thing of DeepSeek?
+- What stood out about DeepSeek?
   - Low-cost training?
   - **An exposed chain of thought**
     - Damn it! The user is angry with me!

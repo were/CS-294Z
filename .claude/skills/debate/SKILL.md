@@ -19,8 +19,8 @@ codex exec -m gpt-5.2-codex \
   -s read-only \
   --enable web_search_request \
   -c model_reasoning_effort=xhigh \
-  -o CODEX_OUTPUT.txt \
-  < prompt.txt
+  -o ${PROJECT_ROOT}/.tmp/CODEX_OUTPUT.txt \
+  < ${PROJECT_ROOT}/.tmp/prompt.txt
 ```
 
 **Key points:**
@@ -36,7 +36,7 @@ If codex is not available, you can use the Claude model instead:
 claude -p --model opus \
   --tools "Read,Grep,Glob,WebSearch,WebFetch \
   -permission-mode bypassPermissions \
-  < prompt.txt > CLAUDE_OUTPUT.txt
+  < ${PROJECT_ROOT}/.tmp/prompt.txt > ${PROJECT_ROOT}/.tmp/CLAUDE_OUTPUT.txt
 ```
 
 **Key points:**
@@ -44,6 +44,15 @@ claude -p --model opus \
 - `--allowedTools`: Auto-approves the same tools
 - `--permission-mode bypassPermissions`: Autonomous operation
 - Output: stdout redirected to file by script
+
+Intentionally, all the temp files are put at `.tmp/` to avoid being included in the project repo,
+as it is re-synthesized every time when running this skill.
+
+## Host Reviewer
+
+Before invoking the debate, you are the host reviewer. You should look at the given slides
+and prepare your own review comments. These comments will be used as the host model's view
+in the debase prompt template (see below).
 
 ## Prompt Template
 
@@ -98,5 +107,5 @@ but not reflected in the slides.
       - Language and Wording
       - Engagement and Interaction
       - Overall
-    2. **Summary of Changes**: Provide a concise summary of the key changes that should be made to improve the slides.
+   2. **Summary of Changes**: Provide a concise summary of the key changes that should be made to improve the slides.
       - Specifically mention which line of the Markdown file needs to be changed, and what the new content should be added.
