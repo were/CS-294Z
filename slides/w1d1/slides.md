@@ -1,4 +1,4 @@
---
+---
 marp: true
 theme: default
 paginate: true
@@ -33,8 +33,6 @@ style: |
   }
   .columns { display: flex; gap: 40px; align-items: center; }
   .col { flex: 1; }
-
-
 ---
 
 # Agentic Programming -
@@ -249,6 +247,7 @@ This class teaches how to:
 **[Models]**
 
 - Haiku (low; cheap); Sonnet (medium; capable); Opus (clever; expensive)
+- Note: Check latest version numbers before class (e.g., Opus 4.1, Sonnet 4, Haiku 3.5)
 
 ---
 
@@ -291,7 +290,7 @@ I believe this is what you do with AI agents every day:
 
 ---
 
-# Lemma: Code is wrong until tested
+# Lemma 1: Code is wrong until tested
 
 - Agent is actually proactive, it will try to fix the code until it is correct.
 - But how does it know the code is correct?
@@ -332,6 +331,21 @@ Prompt:
 
 # Diverge a little bit...
 
+How do LLMs work? (Simplified)
+- LLMs predict the next token based on the context they've seen
+- Context is stored in a memory (KV-cache) and used for predictions
+- As context grows, predicting accurately becomes harder and harder
+
+Key takeaway:
+- **Don't make the AI guess the context from scratch**
+- **Set up the context properly** to get reliable results
+
+But I do not want to do it repeatedly 😭
+
+---
+
+# Backup: How LLM works (Technical Details)
+
 Do you know how an LLM works?
 - Transformers, attention mechanism, tokens, embeddings, etc.
 - $T$: An input token.
@@ -342,7 +356,7 @@ Do you know how an LLM works?
 
 ---
 
-# How LLM works (CONT’D)
+# Backup: How LLM works (CONT'D)
 
 We can see that
 1. $K$, $V$ are the key to remember the context;
@@ -352,8 +366,6 @@ We can see that
 Predicting the next token is unreliable when context grows.
 - Do not guess the context from scratch!
 - Set up the context properly!
-
-But I do not want to do it repeatedly 😭
 
 ---
 
@@ -368,7 +380,7 @@ But I do not want to do it repeatedly 😭
 
 ---
 
-# Setting up the contexts
+# Setting up the context
 
 - `CLAUDE.md` or `AGENTS.md` file
   - Project overview
@@ -403,3 +415,48 @@ But I do not want to do it repeatedly 😭
   - A manually expanded CoT for the AI agent
   - **Key idea:** When you need help, be more specific to what you want!
     - If you do not know what you want, neither does the AI agent!
+
+---
+
+# Agenda (Backup)
+
+- Course goals & expectations
+- Why compilers
+- Tooling history
+- Agent workflow + reliability
+- Context setup habits
+- **Backup: More on context setup**
+
+---
+
+# Lemma 2: LLMs are few-shot learners
+
+- How do kids learn recognizing things?
+  - This was an example when I was learning ML nearly 10 years ago.
+  - John Hopcroft told me this story:
+    - His grandson had a book called *The Best Word Book Ever*
+    - His grandson never saw a firetruck before
+    - But one day on the road, he called out "A firetruck!"
+    - He learned this by seeing even one example in the book!
+- **Key idea:** Provide few-shot examples in the context to help the AI agent understand what you want!
+
+---
+
+# But, do not overdo it!
+
+When are few-shot examples required?
+  - √ Write a test case
+  - √ Following project coding style
+  - × Implement a new algorithm
+  - ? Implement a new feature
+    - It depends on how "new" the feature is.
+
+---
+
+# A New Programming Paradigm
+
+- **DO NOT** tell AI what to do
+- **Document** the purpose, design, and architecture of your project well
+  - Then, ask AI to read the documents to understand what you want
+  - Optionally, provide few-shot examples to help AI understand better
+- **LET AI FIGURE OUT** how to implement it

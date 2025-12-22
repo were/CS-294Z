@@ -1,2 +1,4 @@
 - The first two pages of duplicated titles are intentional to explain why the name of the course is different from they enrolled in from the system. Because of 40-character limit, the course name in the system is abbreviated.
 - All the facts of the history of IDE tooling are already checked in prior iterations, so no need to check them again to save tokens.
+- Vibe code pages are intentionally duplicated for two pages: the first is to explain the word `vibe` using Merriam-Webster dictionary, and the second is to explain the point of vibe coding.
+- The lollipop analogy page is intentionally title-free, as the quote itself is already the point of this page.
