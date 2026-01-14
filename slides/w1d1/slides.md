@@ -83,6 +83,19 @@ Week-1 Session-1
 
 ---
 
+# Grading Policy
+
+- We do not have final exams
+- Grading is purely based on the project checkpoints
+- Checkpoint 1 (10%): Setting up the agent structure
+- Checkpoint 2 (20%): Use agent to build the parser
+- Checkpoint 3 (30%): Generate LLVM intermediate representation
+  - Here to get a non-fail score
+- Final submission (40%): Based on your passing test cases
+- I will curve the scores based on the highest score
+
+---
+
 # Goal: Writing a Compiler using AI Agents
 
 - You will be an expert in:
@@ -445,11 +458,13 @@ Predicting the next token is unreliable when context grows.
 # But, do not overdo it!
 
 When are few-shot examples required?
-  - √ Write a test case
-  - √ Following project coding style
-  - × Implement a new algorithm
-  - ? Implement a new feature
+  - ✅ Write a test case
+  - ✅ Following project coding style
+  - ❌ Implement a new algorithm
+  - ❓ Implement a new feature
     - It depends on how "new" the feature is.
+    - If it has a similar and unified interface design, yes.
+    - If it is a breaking change, no.
 
 ---
 
@@ -460,3 +475,18 @@ When are few-shot examples required?
   - Then, ask AI to read the documents to understand what you want
   - Optionally, provide few-shot examples to help AI understand better
 - **LET AI FIGURE OUT** how to implement it
+
+---
+
+# Wrap-up
+
+- Have your LLM agents installed and ready
+  - `claude` is preferred
+    - It is the 1st coding CLI and defined the most standards
+    - All the following class will stick to `claude` CLI
+  - `codex` is strong but not that transparent
+  - I personally do not like `cursor`
+
+### References
+- [Stanford CS146](https://themodernsoftware.dev/)
+- [Claude Doc Collection](https://code.claude.com/docs/llms.txt)
