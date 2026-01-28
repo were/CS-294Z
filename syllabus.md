@@ -25,6 +25,32 @@
     - Misunderstandings
     - Interrupting AI for corrections
 
+- Proposed Solution: SDD, DDD, and TDD
+    - Spec/Standard-driven Development (SDD)
+    - Doc-driven Development (DDD)
+    - Test-driven Development (TDD)
+
+- Spec is the charter of the development
+    - Spec of the development flow enforces AI to follow the flow
+    - AI follows the sepc of development to read the spec of feature request to make the plan
+    - AI follows the spec to conduct the plan
+
+- What is the standard of the development?
+    - Coding standard
+    - Documentation standard
+    - Testing standard
+    - Standard: Write documentation first, write tests second, and write code last
+
+- We did not 
+
+- Doc-driven:
+    - Update the documentation first
+    - Documntation is for further reference, for better understanding
+    - Which saves the CoT of understanding the code
+
+- Spec driven:
+    - Spec is both the charter of the 
+
 
 ## Week 2 Session 1: Bootstrapping your agentic automation!
 
