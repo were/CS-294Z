@@ -46,6 +46,18 @@ Week-1 Session-2
 
 ---
 
+# I forget one thing last time
+
+- But I did not want to do it last time, as some of you may not officially enroll the class yet...
+- I also found it is super hard to interact with you without knowing you...
+- Self-introduction around all of us:
+  - Name
+  - Background
+  - Experience with AI coding tools
+  - Expectation from this class
+
+---
+
 # Recap from Last Session
 
 - This is **NOT** a class for vibe coding
@@ -100,6 +112,7 @@ AI writes code for you, but:
   - → Test it! Tests don't make it 100% correct, but better than nothing
 - You didn't write it, you didn't even read it! How do you **understand** it?
   - → Documentation!
+  - To my observations: documentation significantly helps AI understand
 - Without tests and docs, you're flying blind
 
 ---
@@ -206,8 +219,6 @@ Claude Code provides a layered system for encoding standards:
     └── implement-feature/
         └── SKILL.md
 ```
-
-> Together, these form the **complete SDD infrastructure**
 
 ---
 
@@ -641,28 +652,28 @@ The correct order:
 
 ```
   ┌─────────────┐
-  │  Feature     │
-  │  Request     │
+  │  Feature    │
+  │  Request    │
   └──────┬──────┘
          ▼
   ┌─────────────┐
-  │  Update Docs │  ← Design the interface
+  │ Update Docs │  ← Design the interface
   └──────┬──────┘
          ▼
   ┌─────────────┐
-  │ Write Stubs  │  ← Empty functions, correct signatures
+  │ Write Stubs │  ← Empty functions, correct signatures
   └──────┬──────┘
          ▼
   ┌─────────────┐
-  │ Write Tests  │  ← Tests compile, but fail
+  │ Write Tests │  ← Tests compile, but fail
   └──────┬──────┘
          ▼
   ┌─────────────┐
-  │ AI Implements│  ← Agent iterates until tests pass
+  │AI Implements│  ← Agent iterates until tests pass
   └──────┬──────┘
          ▼
   ┌─────────────┐
-  │  All Pass    │
+  │  All Pass   │
   └─────────────┘
 ```
 
