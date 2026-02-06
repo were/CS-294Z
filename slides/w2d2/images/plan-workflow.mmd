@@ -1,0 +1,10 @@
+flowchart LR
+    A([Feature Request]) --> B[AI Plans]
+    B --> C{Human Review}
+    C -->|Approve| D([Execute])
+    C -->|Revise| B
+
+    style A fill:#E3F2FD
+    style B fill:#FFF3E0
+    style C fill:#FCE4EC
+    style D fill:#E8F5E9
