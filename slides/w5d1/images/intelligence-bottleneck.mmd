@@ -1,0 +1,23 @@
+flowchart TD
+    A([Task Request]) --> B[Codebase Understanding<br/>Most commonly shared context]
+
+    B --> C[Plan A<br/>Balanced]
+    B --> D[Plan B<br/>Aggressive Refactor]
+    B --> E[Plan C<br/>Conservative Refactor]
+
+    C --> F([Plan D<br/>Synthesis])
+    D --> F
+    E --> F
+
+    G[Shared understanding output] -. reused context .-> C
+    G -. reused context .-> D
+    G -. reused context .-> E
+    B --> G
+
+    style A fill:#E3F2FD
+    style B fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+    style C fill:#FFF3E0
+    style D fill:#FFF3E0
+    style E fill:#FFF3E0
+    style F fill:#E8F5E9
+    style G fill:#F3E5F5
