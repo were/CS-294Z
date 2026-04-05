@@ -1,0 +1,22 @@
+flowchart LR
+  subgraph S["Source Languages (N)"]
+    C["C"]
+    R["Rust"]
+    M["MiniLang"]
+  end
+
+  IR["Intermediate Representation (IR)"]
+
+  subgraph T["Target Machines (M)"]
+    X["x86-64"]
+    A["ARM64"]
+    V["RISC-V"]
+  end
+
+  C --> IR
+  R --> IR
+  M --> IR
+
+  IR --> X
+  IR --> A
+  IR --> V

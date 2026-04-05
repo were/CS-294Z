@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5d6d7e"/>
+    </marker>
+    <style>
+      .title { font: 600 28px Arial, sans-serif; fill: #2c3e50; }
+      .label { font: 600 24px Arial, sans-serif; fill: #2c3e50; }
+      .note { font: 500 20px Arial, sans-serif; fill: #5d6d7e; }
+      .box { fill: #eef5fb; stroke: #5dade2; stroke-width: 2; rx: 14; ry: 14; }
+      .ir { fill: #eafaf1; stroke: #58d68d; stroke-width: 3; rx: 18; ry: 18; }
+      .group { fill: #fbfcfc; stroke: #d5dbdb; stroke-width: 2; rx: 18; ry: 18; }
+      .arrow { stroke: #5d6d7e; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect x="40" y="80" width="350" height="450" class="group"/>
+  <text x="215" y="120" text-anchor="middle" class="title">Source Languages (N)</text>
+
+  <rect x="95" y="165" width="240" height="72" class="box"/>
+  <text x="215" y="210" text-anchor="middle" class="label">C</text>
+
+  <rect x="95" y="270" width="240" height="72" class="box"/>
+  <text x="215" y="315" text-anchor="middle" class="label">Rust</text>
+
+  <rect x="95" y="375" width="240" height="72" class="box"/>
+  <text x="215" y="420" text-anchor="middle" class="label">MiniLang</text>
+
+  <rect x="470" y="205" width="340" height="200" class="ir"/>
+  <text x="640" y="285" text-anchor="middle" class="title">Intermediate</text>
+  <text x="640" y="322" text-anchor="middle" class="title">Representation</text>
+  <text x="640" y="360" text-anchor="middle" class="label">(IR)</text>
+
+  <rect x="890" y="80" width="350" height="450" class="group"/>
+  <text x="1065" y="120" text-anchor="middle" class="title">Target Machines (M)</text>
+
+  <rect x="945" y="165" width="240" height="72" class="box"/>
+  <text x="1065" y="210" text-anchor="middle" class="label">x86-64</text>
+
+  <rect x="945" y="270" width="240" height="72" class="box"/>
+  <text x="1065" y="315" text-anchor="middle" class="label">ARM64</text>
+
+  <rect x="945" y="375" width="240" height="72" class="box"/>
+  <text x="1065" y="420" text-anchor="middle" class="label">RISC-V</text>
+
+  <path d="M335 201 C390 201, 425 225, 470 255" class="arrow"/>
+  <path d="M335 306 C390 306, 425 306, 470 306" class="arrow"/>
+  <path d="M335 411 C390 411, 425 387, 470 357" class="arrow"/>
+
+  <path d="M810 255 C855 225, 890 201, 945 201" class="arrow"/>
+  <path d="M810 306 C855 306, 890 306, 945 306" class="arrow"/>
+  <path d="M810 357 C855 387, 890 411, 945 411" class="arrow"/>
+
+  <text x="400" y="175" text-anchor="middle" class="note">N frontends</text>
+  <text x="880" y="175" text-anchor="middle" class="note">M backends</text>
+</svg>
