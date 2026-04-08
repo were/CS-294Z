@@ -34,37 +34,37 @@ These sessions are the primary references for the AI-assisted engineering workfl
 
 1. **Week 1, Session 1: Intro + Why "Not Vibe Coding"**
    - Focus: course framing, reliability mindset, limits of vibe coding
-   - Slides (Marp): [`slides/w1d1/slides.md`](./slides/w1d1/slides.md)
-   - PDF: [`slides/w1d1/slides.pdf`](./slides/w1d1/slides.pdf)
+   - Slides (Marp): [`slides/w01d1/slides.md`](./slides/w01d1/slides.md)
+   - PDF: [`slides/w01d1/slides.pdf`](./slides/w01d1/slides.pdf)
 
 2. **Week 1, Session 2: Driving Effective Agentic Programming**
    - Focus: SDD / DDD / TDD, docs-first/tests-first flow, standards as the charter
-   - Slides (Marp): [`slides/w1d2/slides.md`](./slides/w1d2/slides.md)
-   - Syllabus notes: [`slides/w1d2/syllabus.md`](./slides/w1d2/syllabus.md)
-   - PDF: [`slides/w1d2/slides.pdf`](./slides/w1d2/slides.pdf)
+   - Slides (Marp): [`slides/w01d2/slides.md`](./slides/w01d2/slides.md)
+   - Syllabus notes: [`slides/w01d2/syllabus.md`](./slides/w01d2/syllabus.md)
+   - PDF: [`slides/w01d2/slides.pdf`](./slides/w01d2/slides.pdf)
 
 3. **Week 2, Session 1: Bootstrapping Agentic Automation**
    - Focus: project rules, skill/rule/command setup, planning habits
-   - Slides (PPTX): [`slides/w2d1/slides.pptx`](./slides/w2d1/slides.pptx)
+   - Slides (PPTX): [`slides/w02d1/slides.pptx`](./slides/w02d1/slides.pptx)
    - Course overview mention: [`syllabus.md`](./syllabus.md)
 
 4. **Week 2, Session 2: Planning and Execution**
    - Focus: plan mode, architecture-aware planning, iterative execution
-   - Slides (Marp): [`slides/w2d2/slides.md`](./slides/w2d2/slides.md)
-   - Syllabus notes: [`slides/w2d2/syllabus.md`](./slides/w2d2/syllabus.md)
-   - PDF: [`slides/w2d2/slides.pdf`](./slides/w2d2/slides.pdf)
+   - Slides (Marp): [`slides/w02d2/slides.md`](./slides/w02d2/slides.md)
+   - Syllabus notes: [`slides/w02d2/syllabus.md`](./slides/w02d2/syllabus.md)
+   - PDF: [`slides/w02d2/slides.pdf`](./slides/w02d2/slides.pdf)
 
 5. **Week 5, Session 1: Workflow and Orchestration**
    - Focus: turning principles into repeatable workflows, multi-plan strategy, human/AI/code responsibility split
-   - Slides (Marp): [`slides/w5d1/slides.md`](./slides/w5d1/slides.md)
-   - Syllabus notes: [`slides/w5d1/syllabus.md`](./slides/w5d1/syllabus.md)
-   - PDF: [`slides/w5d1/slides.pdf`](./slides/w5d1/slides.pdf)
+   - Slides (Marp): [`slides/w05d1/slides.md`](./slides/w05d1/slides.md)
+   - Syllabus notes: [`slides/w05d1/syllabus.md`](./slides/w05d1/syllabus.md)
+   - PDF: [`slides/w05d1/slides.pdf`](./slides/w05d1/slides.pdf)
 
 6. **Week 5, Session 2: Ralph Loop for Reliable Long-Running Execution**
    - Focus: iterative continuation for large tasks, drift/hallucination mitigation, control loops
-   - Slides (Marp): [`slides/w5d2/slides.md`](./slides/w5d2/slides.md)
-   - Syllabus notes: [`slides/w5d2/syllabus.md`](./slides/w5d2/syllabus.md)
-   - PDF: [`slides/w5d2/slides.pdf`](./slides/w5d2/slides.pdf)
+   - Slides (Marp): [`slides/w05d2/slides.md`](./slides/w05d2/slides.md)
+   - Syllabus notes: [`slides/w05d2/syllabus.md`](./slides/w05d2/syllabus.md)
+   - PDF: [`slides/w05d2/slides.pdf`](./slides/w05d2/slides.pdf)
 
 ## Repository Layout
 

@@ -9,7 +9,7 @@ IR = CFG + 3-address code.
 
 - Why does IR look like this?
   - Recap: What do we have for assembly code?
-  - Use w8d1, RISCV encoding example for a recap.
+  - Use w08d1, RISCV encoding example for a recap.
   - Each instruction has three operands: dest, src1, src2/imm --- 3-address code.
   - Each branch has a destination --- control flow graph.
 

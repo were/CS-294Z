@@ -18,7 +18,7 @@
   - Document (Did you even do this?)
 - Now: If you get this planned properly, agents can do it for you maybe within half an hour.
 
-- Follow up the [pain of agentic programming in last week](./slides/w1d1/slides.md)
+- Follow up the [pain of agentic programming in last week](./slides/w01d1/slides.md)
 - What is the root cause of the pain?
   - Human interaction
     - Bugs

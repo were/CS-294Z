@@ -57,7 +57,7 @@ Try [Kimi Code](https://www.kimi.com/code) here - a great coding assistant CLI b
 
 ---
 
-## Recap from w2d1
+## Recap from w02d1
 
 - **SDD** — Spec/Standard-Driven Development
 - **DDD** — Document-Driven Development

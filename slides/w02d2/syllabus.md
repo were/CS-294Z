@@ -5,7 +5,7 @@ I want to talk about two things in this class:
   - "Translating" a current state of the codebase to a desired state (development) is nearly same as translating the state to a plan to an LLM.
   - Plan is the center of human intervention in software development. A rule of thumb: do not stop the development until it is done.
   - Plan make the context focus on what to do next, not the code base.
-  - Plan should follow the SDD, DDD, TDD principle in `w2d1` class.
+  - Plan should follow the SDD, DDD, TDD principle in `w02d1` class.
   - Make a plan is all about what files to read to know what files to change. Thus, you should have somewhere to specify the project architecture.
   - Make a plan is about what to change. Thus, it is good to have the code snippets of the changes in the plan.
 2. Execute a plan.

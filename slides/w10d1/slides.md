@@ -48,7 +48,7 @@ Week 9, Session 2
 
 # Today's Agenda
 
-1. Recap: IR as CFG from `w8d1`
+1. Recap: IR as CFG from `w08d1`
 2. Why compilers need a common IR
 3. Why IR looks like CFG + three-address code
 4. RISC-style intuition: operands and branch targets
@@ -56,7 +56,7 @@ Week 9, Session 2
 
 ---
 
-# Recap from `w8d1`
+# Recap from `w08d1`
 
 Last time we introduced one half of IR:
 

@@ -9,7 +9,7 @@ It is a tool in a pipeline:
 - AI agents may drive it in a loop,
 - test harnesses may feed it hundreds of cases.
 
-So by `w7d2`, the compiler must expose a stable command-line contract.
+So by `w07d2`, the compiler must expose a stable command-line contract.
 We should define this contract now, instead of letting each harness guess how to call the compiler.
 
 ## Core Rule
@@ -77,7 +77,7 @@ but we do not have to redesign the compiler whenever the harness changes.
 
 ## Minimal Contract to Tell Students
 
-By `w7d2`, your compiler should support at least:
+By `w07d2`, your compiler should support at least:
 
 ```bash
 ./build/rcompiler --check
